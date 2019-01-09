@@ -173,10 +173,12 @@ under the License.
     </mirror>
      -->
      <mirror>
-            <id>mirror</id>
-            <mirrorOf>!rdc-releases,!rdc-snapshots</mirrorOf>
-            <name>mirror</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <id>central</id>
+            <name>aiyun maven</name>
+            <url>
+                http://nexus.aiyuninfo.com/content/groups/maven-public/
+            </url>
+            <mirrorOf>central</mirrorOf>
         </mirror>
   </mirrors>
 
@@ -266,98 +268,10 @@ under the License.
       </properties>
     </profile>
     -->
-    <profile>
-            <id>nexus</id>
-            <repositories>
-                <repository>
-                    <id>central</id>
-                    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-                <repository>
-                    <id>snapshots</id>
-                    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
-                <repository>
-                    <id>rdc-releases</id>
-                    <url>https://repo.rdc.aliyun.com/repository/18965-release-rZvcPE/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-                <repository>
-                    <id>rdc-snapshots</id>
-                    <url>https://repo.rdc.aliyun.com/repository/18965-snapshot-ARn4Jx/</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>central</id>
-                    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </pluginRepository>
-                <pluginRepository>
-                    <id>snapshots</id>
-                    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </pluginRepository>
-                <pluginRepository>
-                    <id>rdc-releases</id>
-                    <url>https://repo.rdc.aliyun.com/repository/18965-release-rZvcPE/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </pluginRepository>
-                <pluginRepository>
-                    <id>rdc-snapshots</id>
-                    <url>https://repo.rdc.aliyun.com/repository/18965-snapshot-ARn4Jx/</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
   </profiles>
 
 
 <activeProfiles>
-        <activeProfile>nexus</activeProfile>
     </activeProfiles>
   <!-- activeProfiles
    | List of profiles that are active for all builds.
