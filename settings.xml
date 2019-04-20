@@ -135,16 +135,7 @@ under the License.
     </server>
     -->
 
-     <server>
-            <id>rdc-releases</id>
-            <username>EBb8Hd</username>
-            <password>ioCV0t5kpR</password>
-        </server>
-        <server>
-            <id>rdc-snapshots</id>
-            <username>EBb8Hd</username>
-            <password>ioCV0t5kpR</password>
-        </server>
+    
 
   </servers>
 
