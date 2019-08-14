@@ -164,7 +164,7 @@ under the License.
     </mirror>
      -->
      <mirror>
-            <id>central</id>
+            <id>aiyun-maven-repository</id>
             <name>aiyun maven</name>
             <url>
                 http://nexus.aiyuninfo.com/content/groups/maven-public/
