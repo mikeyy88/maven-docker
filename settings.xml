@@ -53,7 +53,7 @@ under the License.
   <localRepository>/path/to/local/repo</localRepository>
   -->
 
-  <localRepository>/opt/mvn_repo</localRepository>
+<!--  <localRepository>/opt/mvn_repo</localRepository>-->
 
   <!-- interactiveMode
    | This will determine whether maven prompts you when it needs input. If set to false,
@@ -163,14 +163,12 @@ under the License.
       <url>http://my.repository.com/repo/path</url>
     </mirror>
      -->
-     <mirror>
-            <id>aiyun-maven-repository</id>
-            <name>aiyun maven</name>
-            <url>
-                http://nexus.aiyuninfo.com/content/groups/maven-public/
-            </url>
-            <mirrorOf>central</mirrorOf>
-        </mirror>
+      <mirror>
+          <id>nexus-aliyun</id>
+          <mirrorOf>*</mirrorOf>
+          <name>Nexus aliyun</name>
+          <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+      </mirror>
   </mirrors>
 
   <!-- profiles
