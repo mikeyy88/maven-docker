@@ -1,4 +1,4 @@
-FROM maven:3.5.0-jdk-8
+FROM maven:3.6.3-openjdk-8
 
 # copy maven repository setting
 COPY ./settings.xml  /usr/share/maven/conf/
